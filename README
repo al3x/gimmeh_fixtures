@@ -1,0 +1,31 @@
+GimmehFixtures
+==============
+
+Provides a RESTful API to your fixtures so they can be consumed by external 
+applications.  This is useful for giving an external test suite knowledge
+of your fixtures without coupling the two code bases.
+
+Runs only in test and development environments.
+
+Example Usage
+=============
+
+1. Fire up your Rails app:
+  $ script/server
+   
+2. Ask for all the fixtures:
+  $ curl http://localhost:3000/fixtures.xml
+   
+3. Now, ask for one particular set of fixtures:
+  $ curl http://localhost:3000/fixtures/users.json
+
+4. Now your external test suite is empowered with 
+   knowledge of your fixtures.  'grats, champ.
+
+Author
+======
+Alex Payne <al3x@al3x.net>.  
+
+License
+=======
+Released under the WTFPL.
